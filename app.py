@@ -31,7 +31,7 @@ def login():
 
 
         except:
-            flash("This operation  permitted at this time")
+            flash("This operation is not permitted at this time")
     return render_template("login.html")
 @app.route('/users')
 def users():
