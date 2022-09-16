@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME</title>
+
+    <link rel="stylesheet" href="../static/css/mystyle.css">
+
+
+</head>
+<body>
+<h1>GFORM SHOES</h1>
+  {% with messages = get_flashed_messages() %}
+    {% for message in messages %}
+       <p>{{ message }}</p>
+    {% endfor %}
+  {% endwith %}
+
+<form  method="post" action="">
+
+    <input name="u_email" placeholder="Enter email" type="text"><br><br>
+    <input name="u_pass" placeholder="Enter password" type="text"><br><br>
+    <input value="login" type="submit"> <br><br>
+</form>
+<a href="home.html"><button>click</button></a>
+</body>
+</html>

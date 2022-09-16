@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+</head>
+<body>
+<h1>Update here</h1>
+{% with messages = get_flashed_messages() %}
+{% for message in messages %}
+<p>{{ message }}</p>
+{% endfor %}
+{% endwith %}
+<form method="post" action="">
+    <input value="{{ user.name }}" name=u_name" placeholder="Enter name" type="text">
+    <input value="{{ user.email }}" name="u_email" placeholder="Enter email" type="text">
+    <input value="{{ user.password }}" name="u_pass" placeholder="Enter password" type="text">
+    <input value="Update" type="submit"> <br><br>
+
+
+</form>
+</body>
+</html>
